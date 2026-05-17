@@ -112,6 +112,14 @@ const i18n = {
     'contact-credit': 'Szőnyeg Sándor – Balatonfüred és környéke',
     'footer-area': 'Ellátott területek: Balatonfüred, Tihany, Csopak, Aszófő, Balatonudvari, Balatonakali, Pécsely, Dörgicse, Örvényes, Balatonszepezd és a Balaton-felvidék',
     'floating-call': 'Hívás',
+    'meta-title': 'Kertfenntartás Balatonfüredén – Szőnyeg Sándor | Rend Terem',
+    'meta-desc': 'Szőnyeg Sándor kertfenntartása és mobil fűnyíró-késélezés Balatonfüredén: gyümölcsfa-metszés, szőlőmetszés, fűnyírás, sövényvágás, permetezés, kés élezése helyszínen. Hívj: 06-70-237-4493',
+    'meta-keywords': 'kertfenntartás Balatonfüred, gyümölcsfa metszés, szőlőmetszés, fűnyírás, sövényvágás, permetezés, fűnyíró késélezés, mobil fűnyíró szerviz, kertész Balatonfüred, Szőnyeg Sándor, Tihany, Csopak, Balatonalmádi, Balatonudvari, Örvényes',
+    'og-locale': 'hu_HU',
+    'og-title': 'Kertfenntartás Balatonfüredén – Szőnyeg Sándor | Rend Terem',
+    'og-desc': 'Gyümölcsfa-metszés, szőlőmetszés, fűnyírás, sövényvágás, permetezés Balatonfüredén. Megbízható, tiszta munkavégzés. Hívj: 06-70-237-4493',
+    'tw-title': 'Kertfenntartás Balatonfüredén – Szőnyeg Sándor',
+    'tw-desc': 'Gyors, pontos, tiszta kertfenntartás Balatonfüredén. Hívj most: 06-70-237-4493',
   },
   de: {
     'nav-contact': 'Kontakt',
@@ -181,6 +189,14 @@ const i18n = {
     'contact-credit': 'Szőnyeg Sándor – Balatonfüred und Umgebung',
     'footer-area': 'Einsatzgebiet: Balatonfüred, Tihany, Csopak, Aszófő, Balatonudvari, Balatonakali, Pécsely, Dörgicse, Örvényes, Balatonszepezd und Balaton-Hochland',
     'floating-call': 'Anruf',
+    'meta-title': 'Gartenpflege Balatonfüred – Szőnyeg Sándor | Rend Terem',
+    'meta-desc': 'Szőnyeg Sándor bietet professionelle Gartenpflege und mobilen Rasenmähermesserschliff in Balatonfüred: Obstbaumschnitt, Weinrebenschnitt, Rasenmähen, Heckenschnitt, Spritzarbeiten, Messerschliff vor Ort. Anruf: +36-70-237-4493',
+    'meta-keywords': 'Gartenpflege Balatonfüred, Obstbaumschnitt, Weinrebenschnitt, Rasenmähen, Heckenschnitt, Spritzarbeiten, Rasenmähermesserschliff, mobiler Rasenmäherservice, Szőnyeg Sándor, Tihany, Csopak, Balatonalmádi',
+    'og-locale': 'de_DE',
+    'og-title': 'Gartenpflege Balatonfüred – Szőnyeg Sándor | Rend Terem',
+    'og-desc': 'Obstbaumschnitt, Weinrebenschnitt, Rasenmähen, Heckenschnitt, Spritzarbeiten in Balatonfüred. Zuverlässige, saubere Arbeit. Anruf: +36-70-237-4493',
+    'tw-title': 'Gartenpflege Balatonfüred – Szőnyeg Sándor',
+    'tw-desc': 'Schnelle, präzise, saubere Gartenpflege in Balatonfüred. Jetzt anrufen: +36-70-237-4493',
   },
   en: {
     'nav-contact': 'Contact',
@@ -250,6 +266,14 @@ const i18n = {
     'contact-credit': 'Szőnyeg Sándor – Balatonfüred & surroundings',
     'footer-area': 'Service area: Balatonfüred, Tihany, Csopak, Aszófő, Balatonudvari, Balatonakali, Pécsely, Dörgicse, Örvényes, Balatonszepezd and the Balaton Highlands',
     'floating-call': 'Call',
+    'meta-title': 'Garden Maintenance Balatonfüred – Szőnyeg Sándor | Rend Terem',
+    'meta-desc': 'Szőnyeg Sándor offers professional garden maintenance and mobile lawnmower blade sharpening in Balatonfüred: fruit tree pruning, vine pruning, lawn mowing, hedge trimming, spraying, on-site blade sharpening. Call: +36-70-237-4493',
+    'meta-keywords': 'garden maintenance Balatonfüred, fruit tree pruning, vine pruning, lawn mowing, hedge trimming, spraying, lawnmower blade sharpening, mobile mower service, Szőnyeg Sándor, Tihany, Csopak, Balatonalmádi',
+    'og-locale': 'en_US',
+    'og-title': 'Garden Maintenance Balatonfüred – Szőnyeg Sándor | Rend Terem',
+    'og-desc': 'Fruit tree pruning, vine pruning, lawn mowing, hedge trimming, spraying in Balatonfüred. Reliable, clean work. Call: +36-70-237-4493',
+    'tw-title': 'Garden Maintenance Balatonfüred – Szőnyeg Sándor',
+    'tw-desc': 'Fast, precise, clean garden maintenance in Balatonfüred. Call now: +36-70-237-4493',
   },
 };
 
@@ -274,6 +298,23 @@ function applyLang(lang) {
     var active = btn.dataset.lang === lang;
     btn.classList.toggle('lang-btn--active', active);
     btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+  });
+
+  // Meta tag frissítés
+  var metaUpdaters = {
+    'meta-title':    function (v) { document.title = v; },
+    'meta-desc':     function (v) { var m = document.querySelector('meta[name="description"]');         if (m) m.setAttribute('content', v); },
+    'meta-keywords': function (v) { var m = document.querySelector('meta[name="keywords"]');            if (m) m.setAttribute('content', v); },
+    'og-locale':     function (v) { var m = document.querySelector('meta[property="og:locale"]');       if (m) m.setAttribute('content', v); },
+    'og-title':      function (v) { var m = document.querySelector('meta[property="og:title"]');        if (m) m.setAttribute('content', v); },
+    'og-desc':       function (v) { var m = document.querySelector('meta[property="og:description"]'); if (m) m.setAttribute('content', v); },
+    'tw-title':      function (v) { var m = document.querySelector('meta[name="twitter:title"]');       if (m) m.setAttribute('content', v); },
+    'tw-desc':       function (v) { var m = document.querySelector('meta[name="twitter:description"]'); if (m) m.setAttribute('content', v); },
+  };
+  Object.keys(metaUpdaters).forEach(function (key) {
+    if (i18n[lang] && i18n[lang][key] !== undefined) {
+      metaUpdaters[key](i18n[lang][key]);
+    }
   });
 
   try { localStorage.setItem('lang', lang); } catch (e) {}
