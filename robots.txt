@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://rendterem.hu/sitemap.xml
-# Alternate domain: https://szonyegkert.hu/sitemap.xml
+Sitemap: https://szonyegkert.hu/sitemap.xml
