@@ -726,6 +726,47 @@ a {
   transform: translateY(0);
 }
 
+/* ═══ NYELVVÁLTÓ ═══ */
+.lang-switcher {
+  display: flex;
+  gap: 0.18rem;
+  background: rgba(14, 42, 26, 0.06);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.2rem;
+  flex-shrink: 0;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 0.28rem 0.55rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  cursor: pointer;
+  line-height: 1;
+  transition: background 140ms ease, color 140ms ease;
+}
+
+.lang-btn--active {
+  background: var(--forest);
+  color: #fff;
+}
+
+.lang-btn:hover:not(.lang-btn--active) {
+  background: rgba(14, 42, 26, 0.12);
+  color: var(--ink);
+}
+
+.lang-btn:focus-visible {
+  outline: 3px solid rgba(26, 122, 72, 0.28);
+  outline-offset: 2px;
+}
+
 /* ═══ 13. RESZPONZÍV ═══ */
 @media (max-width: 980px) {
   .hero-shell {
@@ -758,13 +799,15 @@ a {
 
 @media (max-width: 640px) {
   .site-header { top: .4rem; }
-  .header-row  { border-radius: 14px; gap: 0.45rem; padding: 0.5rem 0.7rem; }
+  .header-row  { border-radius: 14px; gap: 0.35rem; padding: 0.5rem 0.7rem; }
 
   .brand span  { display: none; }
   .brand-logo  { width: 38px; height: 38px; }
 
   .header-fb span { display: none; }
   .header-fb   { padding: 0.38rem 0.55rem; }
+
+  .lang-btn { padding: 0.22rem 0.42rem; font-size: 0.7rem; }
 
   .hero-copy,
   .hero-card,
