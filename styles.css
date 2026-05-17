@@ -379,6 +379,7 @@ h1 span {
 
 /* ═══ 9. SZEKCIÓK (Szolgáltatások, Folyamat, Kapcsolat) ═══ */
 .services,
+.sharpening,
 .process,
 .contact {
   margin-top: 1rem;
@@ -429,6 +430,104 @@ h1 span {
   transform: translateY(-3px);
   border-color: rgba(26,122,72,.36);
   box-shadow: 0 10px 20px rgba(14,42,26,.1);
+}
+
+.sharpening-body {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  align-items: start;
+}
+
+.sharpening-problems {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.sharpening-problems li {
+  background: rgba(198, 139, 60, 0.08);
+  border: 1px solid rgba(198, 139, 60, 0.22);
+  border-radius: 10px;
+  padding: 0.55rem 0.9rem 0.55rem 2.2rem;
+  position: relative;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.sharpening-problems li::before {
+  content: "?";
+  position: absolute;
+  left: 0.7rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.sharpening-problems li:last-child {
+  background: rgba(26, 122, 72, 0.07);
+  border-color: rgba(26, 122, 72, 0.2);
+}
+
+.sharpening-problems li:last-child::before {
+  content: "!";
+  color: var(--accent);
+}
+
+.sharpening-intro {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  color: var(--muted);
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.sharpening-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.42rem;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.sharpening-list li {
+  padding-left: 1.7rem;
+  position: relative;
+  font-weight: 600;
+}
+
+.sharpening-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.sharpening-cta-text {
+  margin: 0.4rem 0 0.8rem;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.sharpening-body .btn {
+  grid-column: 2;
+  grid-row: 4;
+  justify-self: start;
+}
+
+.sharpening-sub {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  grid-column: 2;
+  grid-row: 5;
 }
 
 .process ol {
@@ -635,6 +734,7 @@ a {
   .hero-copy,
   .hero-card,
   .services,
+  .sharpening,
   .process,
   .contact     { border-radius: 20px; }
   .hero-actions { flex-direction: column; align-items: stretch; }
@@ -642,6 +742,18 @@ a {
 
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sharpening-body {
+    grid-template-columns: 1fr;
+  }
+  .sharpening-intro,
+  .sharpening-list,
+  .sharpening-cta-text,
+  .sharpening-body .btn,
+  .sharpening-sub {
+    grid-column: 1;
+    grid-row: auto;
   }
 
   .floating-call {
