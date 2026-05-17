@@ -744,7 +744,14 @@ a {
 
 @media (max-width: 640px) {
   .site-header { top: .4rem; }
-  .header-row  { border-radius: 14px; }
+  .header-row  { border-radius: 14px; gap: 0.45rem; padding: 0.5rem 0.7rem; }
+
+  .brand span  { display: none; }
+  .brand-logo  { width: 38px; height: 38px; }
+
+  .header-fb span { display: none; }
+  .header-fb   { padding: 0.38rem 0.55rem; }
+
   .hero-copy,
   .hero-card,
   .services,
