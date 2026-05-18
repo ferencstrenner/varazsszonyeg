@@ -141,6 +141,25 @@ body {
   background: rgba(24, 119, 242, 0.18);
   transform: translateY(-1px);
 }
+.header-ig {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #C13584;
+  background: rgba(193, 53, 132, 0.1);
+  border: 1px solid rgba(193, 53, 132, 0.22);
+  border-radius: 999px;
+  padding: 0.38rem 0.75rem;
+  transition: background 140ms ease, transform 140ms ease;
+}
+.header-ig:hover {
+  background: rgba(193, 53, 132, 0.18);
+  transform: translateY(-1px);
+}
 
 /* ═══ 5. HERO SZEKCIÓ ═══ */
 .hero {
@@ -169,6 +188,7 @@ body {
   position: absolute; bottom: -120px; right: -100px;
   width: 360px; height: 360px; border-radius: 50%;
   background: radial-gradient(circle, rgba(26,122,72,.2), transparent 68%);
+  pointer-events: none;
 }
 
 .eyebrow {
@@ -806,6 +826,8 @@ a {
 
   .header-fb span { display: none; }
   .header-fb   { padding: 0.38rem 0.55rem; }
+  .header-ig span { display: none; }
+  .header-ig   { padding: 0.38rem 0.55rem; }
 
   .lang-btn { padding: 0.22rem 0.42rem; font-size: 0.7rem; }
 
