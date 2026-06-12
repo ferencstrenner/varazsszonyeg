@@ -46,7 +46,7 @@ if (heroCard && !reducedMotion) {
 const i18n = {
   hu: {
     'nav-contact': 'Kapcsolat',
-    'hero-eyebrow': 'Szőnyeg Sándor – kertfenntartás • Balatonfüred és környéke',
+    'hero-eyebrow': 'Szőnyeg Sándor – kertrendezés, kertgondozás, kertfenntartás • Balatonfüred és környéke',
     'hero-h1': 'Ahová lépek,<br><span>rend terem.</span>',
     'hero-q1': 'A kerted kezd dzsungellé válni?',
     'hero-q2': 'A szőlő elhanyagolt?',
@@ -84,7 +84,7 @@ const i18n = {
     'stat3-p': 'Gyors kiszállás a helyszínre, rugalmas időpontokkal.',
     'services-eyebrow': 'Szolgáltatások',
     'services-h2': 'A kert, amire jó érzés ránézni',
-    'services-lead': 'Komplett fenntartás nyaralókhoz, családi házakhoz és telkekhez.',
+    'services-lead': 'Komplett kertrendezés, kertgondozás és fenntartás nyaralókhoz, családi házakhoz és telkekhez.',
     'svc1': 'Gyümölcsfák szakszerű metszése',
     'svc2': 'Szőlőmetszés magánkertekben',
     'svc3': 'Kaszálás, fűnyírás, szegélyvágás',
@@ -96,6 +96,7 @@ const i18n = {
     'svc9': 'Gyepszellőztetés',
     'svc10': 'Rotációs talajlazítás',
     'svc11': 'Műtrágya kijuttatása',
+    'svc12': 'Kertrendezés és kertgondozás igény szerint',
     'sharp-eyebrow': 'Kiegészítő szolgáltatás',
     'sharp-h2': 'Mobil fűnyíró késélezés és olajcsere – helyszínen!',
     'sharp-p1': 'Rondán vág a fűnyíró?',
@@ -118,16 +119,16 @@ const i18n = {
     'process-li3': '<strong>Munka:</strong> megbízható kivitelezés, tiszta átadás.',
     'contact-eyebrow': 'Kapcsolat',
     'contact-h2': 'Írj üzenetet vagy hívj!',
-    'contact-p': 'Varázsoljunk rendet a kertedben! Gyors, pontos, tiszta munkavégzés Balatonfüreden és környékén.',
+    'contact-p': 'Kertrendezés, kertgondozás és kertfenntartás Balatonfüreden. Gyors, pontos, tiszta munkavégzés – hívj!',
     'contact-credit': 'Szőnyeg Sándor – Balatonfüred és környéke',
     'footer-area': 'Ellátott területek: Balatonfüred, Tihany, Csopak, Aszófő, Balatonudvari, Balatonakali, Pécsely, Dörgicse, Örvényes, Balatonszepezd és a Balaton-felvidék',
     'floating-call': 'Hívás',
-    'meta-title': 'Kertfenntartás Balatonfüredén – Szőnyeg Sándor | Rend Terem',
-    'meta-desc': 'Szőnyeg Sándor kertfenntartása és mobil fűnyíró-késélezés Balatonfürédén: gyümölcsfa-metszés, szőlőmetszés, fűnyírás, sövényvágás, permetezés, gyepszellőztetés, rotációs talajlazítás, műtrágya kijuttatás, kés élezése helyszínen. Hívj: 06-70-237-4493',
-    'meta-keywords': 'kertfenntartás Balatonfüred, gyümölcsfa metszés, szőlőmetszés, fűnyírás, sövényvágás, permetezés, gyepszellőztetés, rotációs talajlazítás, műtrágya kijuttatás, fűnyíró késélezés, mobil fűnyíró szerviz, kertész Balatonfüred, Szőnyeg Sándor, Tihany, Csopak, Balatonalmádi, Balatonudvari, Örvényes',
+    'meta-title': 'Kertrendezés, kertfenntartás Balatonfüreden – Szőnyeg Sándor | Rend Terem',
+    'meta-desc': 'Kertrendezés, kertgondozás és kertfenntartás Balatonfüreden – Szőnyeg Sándor. Gyümölcsfa-metszés, fűnyírás, sövényvágás, permetezés, kertápolás, talajlazítás, mobil fűnyíró-késélezés. Hívj: 06-70-237-4493',
+    'meta-keywords': 'kertrendezés Balatonfüred, kertgondozás Balatonfüred, kertfenntartás Balatonfüred, kertápolás, kertész Balatonfüred, kerti munkák, tavaszi kertrendezés, őszi kertrendezés, kerttakarítás, gyümölcsfa metszés, szőlőmetszés, fűnyírás, sövényvágás, permetezés, gyepszellőztetés, rotációs talajlazítás, műtrágya kijuttatás, fűnyíró késélezés, fűnyíró kés élezés, mobil fűnyíró szerviz, nyaralókert, balatoni kert, Szőnyeg Sándor, Tihany, Csopak, Balatonalmádi, Balatonudvari, Örvényes',
     'og-locale': 'hu_HU',
-    'og-title': 'Kertfenntartás Balatonfüredén – Szőnyeg Sándor | Rend Terem',
-    'og-desc': 'Gyümölcsfa-metszés, szőlőmetszés, fűnyírás, sövényvágás, permetezés, gyepszellőztetés, rotációs talajlazítás Balatonfürédén. Megbízható, tiszta munkavégzés. Hívj: 06-70-237-4493',
+    'og-title': 'Kertrendezés, kertfenntartás Balatonfüreden – Szőnyeg Sándor | Rend Terem',
+    'og-desc': 'Kertrendezés, kertgondozás, metszés, fűnyírás, sövényvágás, permetezés, talajlazítás Balatonfüreden. Megbízható, tiszta munkavégzés. Hívj: 06-70-237-4493',
     'tw-title': 'Kertfenntartás Balatonfüredén – Szőnyeg Sándor',
     'tw-desc': 'Gyors, pontos, tiszta kertfenntartás Balatonfüredén. Hívj most: 06-70-237-4493',
   },
@@ -183,6 +184,7 @@ const i18n = {
     'svc9': 'Rasenlüftung',
     'svc10': 'Bodenfräsung',
     'svc11': 'Kunstdüngerausbringung',
+    'svc12': 'Gartengestaltung und Gartenpflege nach Wunsch',
     'sharp-eyebrow': 'Zusatzleistung',
     'sharp-h2': 'Mobiler Rasenmähermesserschliff und Ölwechsel – vor Ort!',
     'sharp-p1': 'Mäht der Rasenmäher ungleichmäßig?',
@@ -270,6 +272,7 @@ const i18n = {
     'svc9': 'Lawn aeration',
     'svc10': 'Rotary scarification',
     'svc11': 'Fertilizer application',
+    'svc12': 'Garden design and care on request',
     'sharp-eyebrow': 'Additional service',
     'sharp-h2': 'Mobile lawnmower blade sharpening & oil change – on site!',
     'sharp-p1': 'Does the mower cut unevenly?',
@@ -365,18 +368,8 @@ document.querySelectorAll('.lang-btn').forEach(function (btn) {
     // Korábban mentett preferencia
     lang = saved;
   } else {
-    // Böngésző nyelvek (teljes sorrend: navigator.languages tömb, fallback: navigator.language)
-    var browserLangs = (navigator.languages && navigator.languages.length)
-      ? Array.prototype.slice.call(navigator.languages)
-      : [navigator.language || ''];
-    for (var i = 0; i < browserLangs.length; i++) {
-      var code = browserLangs[i].slice(0, 2).toLowerCase();
-      if (supported.indexOf(code) !== -1) {
-        lang = code;
-        break;
-      }
-    }
-    if (!lang) lang = 'hu';
+    // Nincs mentett preferencia → mindig magyar (SEO: Google mindig a HU verziót indexeli)
+    lang = 'hu';
   }
 
   applyLang(lang);
